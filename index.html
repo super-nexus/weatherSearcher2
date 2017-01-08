@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="styleSheet.css"/>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h1 id="header">Weather Predictor</h1>
+                <h4 id="infoText"> Enter your city below to get a forecast for the weather</h4>
+
+            </div>
+        </div>
+
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <input id="inputArea" class="form-control" type="text" name="cityName"
+                           placeholder="Eg. London, Paris, San Francisco"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button id="submitButton" class="btn btn-success" type="submit">Find my Weather</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 alerts">
+                <div id="success" class="alert alert-success"> Success!</div>
+                <div id="fail" class="alert alert-danger">Something went wrong</div>
+                <div id="noCity" class="alert alert-danger"> Please enter a valid city</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="gain.js"></script>
+</body>
+</html>
